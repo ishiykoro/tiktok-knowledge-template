@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>豆知識画像テンプレート</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #111111;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        "Yu Gothic",
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(1400px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 40px 0 80px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 32px;
+      text-align: center;
+      color: #333333;
+      font-size: 17px;
+    }
+
+    .rules {
+      max-width: 900px;
+      margin: 0 auto 48px;
+      padding: 24px 28px;
+      border: 1px solid #cccccc;
+      background: #fafafa;
+    }
+
+    .rules h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .rules h2:not(:first-child) {
+      margin-top: 22px;
+    }
+
+    .rules p {
+      margin: 0;
+      color: #222222;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      background: #ffffff;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #000000;
+    }
+
+    figcaption {
+      padding: 10px 0 2px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .instruction {
+      max-width: 900px;
+      margin: 48px auto 0;
+      padding: 20px 24px;
+      border: 2px solid #111111;
+      background: #ffffff;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #777777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        width: min(100% - 24px, 1400px);
+        padding-top: 24px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <h1>豆知識画像テンプレート</h1>
+
+    <p class="intro">
+      以下のサンプル画像を完成デザインの基準とする。
+      画像生成時は、各画像の黒い外側背景、カードサイズ、
+      上下左右の余白、配色、文字配置、画像比率、
+      赤い装飾枠、緑色の要点ボックスを確認する。
+    </p>
+
+    <section class="rules">
+      <h2>変更してよい項目</h2>
+      <p>
+        カテゴリー、メインタイトル、写真またはイラスト、
+        要点、本文
+      </p>
+
+      <h2>変更してはいけない項目</h2>
+      <p>
+        黒い背景の広さ、カードサイズ、上下左右の余白、
+        赤い装飾枠、文字配置、文字サイズ、
+        画像比率、緑色ボックスの位置
+      </p>
+    </section>
+
+    <section class="gallery">
+
+      <figure>
+        <img
+          src="sample01.png"
+          alt="豆知識画像テンプレート サンプル1"
+        >
+        <figcaption>サンプル1</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="sample02.png"
+          alt="豆知識画像テンプレート サンプル2"
+        >
+        <figcaption>サンプル2</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="sample03.png"
+          alt="豆知識画像テンプレート サンプル3"
+        >
+        <figcaption>サンプル3</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="sample04.png"
+          alt="豆知識画像テンプレート サンプル4"
+        >
+        <figcaption>サンプル4</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="sample05.png"
+          alt="豆知識画像テンプレート サンプル5"
+        >
+        <figcaption>サンプル5</figcaption>
+      </figure>
+
+    </section>
+
+    <section class="instruction">
+      <strong>画像生成ルール：</strong><br>
+      サンプル画像の内容そのものはコピーしない。
+      当日のテーマに応じて、カテゴリー、タイトル、
+      写真またはイラスト、要点、本文だけを変更する。
+      一覧画像、コラージュ、複数カードを1枚にまとめた画像は禁止する。
+    </section>
+
+    <footer>
+      TikTok Knowledge Image Template
+    </footer>
+
+  </main>
+</body>
+</html>
