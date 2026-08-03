@@ -1,20 +1,138 @@
-# 豆知識画像テンプレート
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-以下のsample画像のレイアウト・余白・配色・文字サイズを基準とする。
+  <title>豆知識画像テンプレート</title>
 
-変更してよいもの
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px 80px;
+      background: #111111;
+      color: #ffffff;
+      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+    }
 
-・カテゴリー
-・タイトル
-・イラスト
-・要点
-・本文
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
-変更禁止
+    h1 {
+      margin-bottom: 12px;
+      text-align: center;
+      font-size: 34px;
+    }
 
-・レイアウト
-・余白
-・配色
-・文字サイズ
-・緑ボックス位置
-・タイトル位置
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 40px;
+      text-align: center;
+      line-height: 1.8;
+      color: #dddddd;
+    }
+
+    .rules {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      padding: 24px 30px;
+      border-radius: 16px;
+      background: #222222;
+      line-height: 1.9;
+    }
+
+    .rules h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 36px;
+      align-items: start;
+    }
+
+    figure {
+      margin: 0;
+      padding: 14px;
+      border-radius: 14px;
+      background: #202020;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      padding-top: 12px;
+      text-align: center;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <h1>豆知識画像テンプレート</h1>
+
+    <p class="intro">
+      以下のサンプル画像を完成デザインの基準とする。
+      画像生成時は、黒い外側背景、カードの大きさ、余白、
+      配色、文字位置、写真比率、緑色の要点ボックスを参考にする。
+    </p>
+
+    <section class="rules">
+      <h2>変更してよい項目</h2>
+      <p>
+        カテゴリー、メインタイトル、写真またはイラスト、
+        要点、本文
+      </p>
+
+      <h2>変更禁止項目</h2>
+      <p>
+        黒い背景の広さ、カードの大きさ、上下左右の余白、
+        赤い装飾枠、文字配置、文字サイズ、
+        写真の比率、緑色ボックスの位置
+      </p>
+    </section>
+
+    <section class="gallery">
+
+      <figure>
+        <img src="sample01.png" alt="豆知識テンプレート サンプル1">
+        <figcaption>サンプル1</figcaption>
+      </figure>
+
+      <figure>
+        <img src="sample02.png" alt="豆知識テンプレート サンプル2">
+        <figcaption>サンプル2</figcaption>
+      </figure>
+
+      <figure>
+        <img src="sample03.png" alt="豆知識テンプレート サンプル3">
+        <figcaption>サンプル3</figcaption>
+      </figure>
+
+      <figure>
+        <img src="sample04.png" alt="豆知識テンプレート サンプル4">
+        <figcaption>サンプル4</figcaption>
+      </figure>
+
+      <figure>
+        <img src="sample05.png" alt="豆知識テンプレート サンプル5">
+        <figcaption>サンプル5</figcaption>
+      </figure>
+
+    </section>
+
+  </main>
+</body>
+</html>
