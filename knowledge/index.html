@@ -13,9 +13,8 @@
 
     body {
       margin: 0;
-      padding: 48px 20px 80px;
       background: #ffffff;
-      color: #222222;
+      color: #111111;
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -23,103 +22,105 @@
         "Noto Sans JP",
         "Yu Gothic",
         sans-serif;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     main {
-      width: min(1200px, 100%);
+      width: min(1400px, calc(100% - 40px));
       margin: 0 auto;
+      padding: 40px 0 80px;
     }
 
     h1 {
-      margin: 0 0 16px;
+      margin: 0 0 14px;
       text-align: center;
-      color: #1f2933;
-      font-size: clamp(30px, 4vw, 46px);
-      letter-spacing: 0.04em;
+      font-size: 36px;
     }
 
     .intro {
       max-width: 900px;
-      margin: 0 auto 42px;
+      margin: 0 auto 32px;
       text-align: center;
-      color: #555555;
+      color: #333333;
       font-size: 17px;
     }
 
     .rules {
       max-width: 900px;
-      margin: 0 auto 56px;
-      padding: 30px 34px;
-      border: 1px solid #dddddd;
-      border-radius: 18px;
-      background: #f7f7f7;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin: 0 auto 48px;
+      padding: 24px 28px;
+      border: 1px solid #cccccc;
+      background: #fafafa;
     }
 
     .rules h2 {
-      margin: 0 0 10px;
-      color: #222222;
-      font-size: 25px;
+      margin: 0 0 8px;
+      font-size: 22px;
     }
 
     .rules h2:not(:first-child) {
-      margin-top: 26px;
+      margin-top: 22px;
     }
 
     .rules p {
       margin: 0;
-      color: #444444;
-      font-size: 16px;
+      color: #222222;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(300px, 1fr));
-      gap: 36px;
-      align-items: start;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
     }
 
     figure {
       margin: 0;
-      padding: 14px;
-      border: 1px solid #dddddd;
-      border-radius: 16px;
-      background: #f3f3f3;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      padding: 12px;
+      border: 1px solid #cccccc;
+      background: #ffffff;
     }
 
     figure img {
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 8px;
       background: #000000;
     }
 
     figcaption {
-      padding: 14px 4px 4px;
+      padding: 10px 0 2px;
       text-align: center;
-      color: #222222;
-      font-size: 17px;
       font-weight: 700;
     }
 
-    .note {
+    .instruction {
       max-width: 900px;
-      margin: 58px auto 0;
-      padding: 22px 26px;
-      border-left: 5px solid #b51f24;
-      background: #fff7f7;
-      color: #444444;
+      margin: 48px auto 0;
+      padding: 20px 24px;
+      border: 2px solid #111111;
+      background: #ffffff;
     }
 
     footer {
-      margin-top: 70px;
+      margin-top: 60px;
       text-align: center;
-      color: #888888;
-      font-size: 14px;
+      color: #777777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        width: min(100% - 24px, 1400px);
+        padding-top: 24px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
@@ -131,80 +132,62 @@
 
     <p class="intro">
       以下のサンプル画像を完成デザインの基準とする。
-      画像生成時は、黒い外側背景、カードの大きさ、上下左右の余白、
-      配色、文字位置、画像比率、赤い装飾枠、
-      緑色の要点ボックスを参考にする。
+      画像生成時は、各画像の黒い外側背景、カードサイズ、
+      余白、配色、文字配置、画像比率、赤い装飾枠、
+      緑色の要点ボックスを確認する。
     </p>
 
     <section class="rules">
       <h2>変更してよい項目</h2>
       <p>
         カテゴリー、メインタイトル、写真またはイラスト、
-        要点、本文。
+        要点、本文
       </p>
 
-      <h2>変更禁止項目</h2>
+      <h2>変更してはいけない項目</h2>
       <p>
-        黒い背景の広さ、カードの大きさ、上下左右の余白、
+        黒い背景の広さ、カードサイズ、上下左右の余白、
         赤い装飾枠、文字配置、文字サイズ、
-        画像の比率、緑色ボックスの位置。
+        画像比率、緑色ボックスの位置
       </p>
     </section>
 
     <section class="gallery">
 
       <figure>
-        <img
-          src="sample01.png"
-          alt="豆知識画像テンプレート サンプル1"
-          loading="lazy"
-        >
+        <img src="sample01.png" alt="豆知識画像テンプレート サンプル1">
         <figcaption>サンプル1</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="sample02.png"
-          alt="豆知識画像テンプレート サンプル2"
-          loading="lazy"
-        >
+        <img src="sample02.png" alt="豆知識画像テンプレート サンプル2">
         <figcaption>サンプル2</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="sample03.png"
-          alt="豆知識画像テンプレート サンプル3"
-          loading="lazy"
-        >
+        <img src="sample03.png" alt="豆知識画像テンプレート サンプル3">
         <figcaption>サンプル3</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="sample04.png"
-          alt="豆知識画像テンプレート サンプル4"
-          loading="lazy"
-        >
+        <img src="sample04.png" alt="豆知識画像テンプレート サンプル4">
         <figcaption>サンプル4</figcaption>
       </figure>
 
       <figure>
-        <img
-          src="sample05.png"
-          alt="豆知識画像テンプレート サンプル5"
-          loading="lazy"
-        >
+        <img src="sample05.png" alt="豆知識画像テンプレート サンプル5">
         <figcaption>サンプル5</figcaption>
       </figure>
 
     </section>
 
-    <div class="note">
-      画像生成時は、各サンプルの内容そのものをコピーせず、
-      当日のテーマに応じてカテゴリー、タイトル、画像、要点、本文だけを変更する。
-      一覧画像や複数カードを1枚にまとめた画像は作成しない。
-    </div>
+    <section class="instruction">
+      <strong>画像生成ルール：</strong><br>
+      サンプルの内容はコピーしない。
+      当日のテーマに合わせて、カテゴリー、タイトル、
+      写真またはイラスト、要点、本文だけを変更する。
+      一覧画像や複数カードを1枚にまとめた画像は禁止する。
+    </section>
 
     <footer>
       TikTok Knowledge Image Template
