@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TikTok画像テンプレート管理サイト</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #1f2933;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        "Yu Gothic",
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 72px 24px 64px;
+      text-align: center;
+      color: #ffffff;
+      background:
+        linear-gradient(
+          135deg,
+          #102f4f 0%,
+          #174a70 100%
+        );
+    }
+
+    header h1 {
+      margin: 0 0 16px;
+      font-size: clamp(30px, 5vw, 52px);
+      letter-spacing: 0.04em;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 17px;
+      opacity: 0.92;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 100px;
+    }
+
+    section {
+      margin-bottom: 64px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: #153b5b;
+      font-size: 30px;
+    }
+
+    .section-description {
+      margin: 0 0 28px;
+      color: #5d6872;
+    }
+
+    .series-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .series-card {
+      min-height: 230px;
+      padding: 30px;
+      border: 1px solid #e3ddd2;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(30, 45, 60, 0.07);
+    }
+
+    .series-card h3 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    .series-card p {
+      margin: 0 0 22px;
+      color: #606b75;
+    }
+
+    .knowledge {
+      border-top: 6px solid #a82121;
+    }
+
+    .news {
+      border-top: 6px solid #247342;
+    }
+
+    .future {
+      border-top: 6px solid #9099a2;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #eef2f5;
+      color: #40505e;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .rule-box {
+      padding: 28px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e3ddd2;
+    }
+
+    .rule-box ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .rule-box li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #69737d;
+      background: #ece8df;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>TikTok画像テンプレート管理サイト</h1>
+
+    <p>
+      TikTok投稿用画像の完成サンプル、固定レイアウト、
+      配色、文字構成、余白、禁止事項を一元管理するページです。
+      画像生成時は、対象シリーズの仕様を確認してから制作してください。
+    </p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>シリーズ一覧</h2>
+
+      <p class="section-description">
+        現在運用中、または今後追加予定の画像シリーズです。
+      </p>
+
+      <div class="series-grid">
+
+        <article class="series-card knowledge">
+          <h3>知らないと損する豆知識</h3>
+
+          <p>
+            節約、スマホ、人間関係、健康、防犯、
+            暮らし、雑学などを扱う縦型画像シリーズ。
+          </p>
+
+          <span class="status">テンプレート準備中</span>
+        </article>
+
+        <article class="series-card news">
+          <h3>今日のニュース10選</h3>
+
+          <p>
+            社会、政治、国際、経済、生活、災害、
+            スポーツ、芸能、テクノロジーを扱うニュース画像。
+          </p>
+
+          <span class="status">テンプレート準備中</span>
+        </article>
+
+        <article class="series-card future">
+          <h3>今後追加するシリーズ</h3>
+
+          <p>
+            新しいTikTok画像企画を追加する際は、
+            このカードと個別仕様ページを増設します。
+          </p>
+
+          <span class="status">追加可能</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>共通制作ルール</h2>
+
+      <p class="section-description">
+        すべての画像シリーズで共通して守る基本方針です。
+      </p>
+
+      <div class="rule-box">
+        <ul>
+          <li>画像サイズは1080×1920pxの縦型とする。</li>
+          <li>上下に十分な安全余白を確保する。</li>
+          <li>TikTok右側の操作ボタン領域を避ける。</li>
+          <li>下部キャプション表示領域を避ける。</li>
+          <li>文字はスマートフォンで読みやすい大きさにする。</li>
+          <li>第三者の写真、ロゴ、キャラクター、画面素材は使用しない。</li>
+          <li>画像素材は独自生成イラストのみ使用する。</li>
+          <li>一覧画像や複数カードを1枚にまとめた画像は納品しない。</li>
+          <li>最終納品は必ず個別PNGとZIPにする。</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    TikTok Image Template Library
+  </footer>
+
+</body>
+</html>
